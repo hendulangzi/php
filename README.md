@@ -10,7 +10,7 @@
 			}else{
 				$date=strtotime($week)+($i-$whichD)*24*3600;
 			}
-			$weeks[$i]=date('m-d',$date);
+			$weeks[$i]=date('Y-m-d',$date);
 
 		}
 		return $weeks;
