@@ -12,3 +12,5 @@
 	Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
 	Header always set Access-Control-Max-Age "1000"
 	Header always set Access-Control-Allow-Headers "x-requested-with, Content-Type, origin, authorization, accept, client-security-token"
+
+# 'URL_MODEL'	=>	2, // 如果你的环境不支持PATHINFO 请设置为3
