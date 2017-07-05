@@ -14,3 +14,17 @@
 	Header always set Access-Control-Allow-Headers "x-requested-with, Content-Type, origin, authorization, accept, client-security-token"
 
 # 'URL_MODEL'	=>	2, // 如果你的环境不支持PATHINFO 请设置为3
+
+# php curl 下载https图片
+	$url = "http://www.thinkphp.cn/Public/new/img/header_logo.png";
+	$filename = '../uploads/'.rand(1,99).'.gif';
+	$ch = curl_init($url);
+	$fp = fopen($filename, "wb");
+	curl_setopt($ch, CURLOPT_FILE, $fp);
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt ($ch, CURLOPT_SSL_VERIFYHOST, false);
+	$res=curl_exec($ch);
+	curl_close($ch);
+	fclose($fp);
+	return $res;
