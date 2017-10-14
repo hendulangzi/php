@@ -19,3 +19,5 @@
   5、参考手册写例子运行或者从主页下载demo运行
   
   workman 安装：http://www.workerman.net/install
+  
+  yum install lrzsz
