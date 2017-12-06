@@ -28,3 +28,6 @@
 	curl_close($ch);
 	fclose($fp);
 	return $res;
+
+#  php 5.6安装
+ http://blog.csdn.net/zhaozuosui/article/details/48394409
