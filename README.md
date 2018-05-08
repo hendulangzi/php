@@ -32,5 +32,5 @@
 #  php 5.6安装
  http://blog.csdn.net/zhaozuosui/article/details/48394409
  
-# 访客的所属城市
+# 通过ip获取所属城市，获取用户所在城市
  https://www.cnblogs.com/ginowang42/p/7127569.html
