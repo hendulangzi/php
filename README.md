@@ -34,3 +34,6 @@
  
 # 通过ip获取所属城市，获取用户所在城市
  https://www.cnblogs.com/ginowang42/p/7127569.html
+
+# phpstrom-激活方法
+jetbrains-agent.rar
