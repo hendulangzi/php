@@ -37,3 +37,26 @@
 
 # phpstrom-激活方法
 jetbrains-agent.rar
+
+# 判断是否是节假日
+	 public function get_type_by_date(){
+	    $today = date('Ymd');//工作日为0，休息日1，节假日2
+	    if (cache($today) !== false) {
+	        return cache($today);
+	    } else {
+	        $api1 = file_get_contents('https://tool.bitefu.net/jiari/?d='.$today);
+	        var_dump($api1,11);exit;
+	        if (is_numeric($api1)) {
+	            cache($today, $api1, 86400);
+	            return cache($today);
+	        } else {
+	            $api2 = json_decode(file_get_contents('https://www.easybots.cn/api/holiday.php?d='.$today));
+	            if (is_numeric($api2)) {
+	                cache($today, $api2->$today, 86400);
+	                return cache($today);
+	            } else {
+	                return -1;
+	            }
+	        }
+	    }
+	}
