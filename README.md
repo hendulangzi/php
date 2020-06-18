@@ -60,3 +60,7 @@ jetbrains-agent.rar
 	        }
 	    }
 	}
+	
+	
+ # 汉子转拼音 
+  * https://www.cnblogs.com/xielong/p/8652789.html
