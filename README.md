@@ -64,3 +64,8 @@ jetbrains-agent.rar
 	
  # 汉子转拼音 
   * https://www.cnblogs.com/xielong/p/8652789.html
+
+ # mysql 触发器
+ 	* CREATE TRIGGER `rel` AFTER UPDATE ON `user` FOR EACH ROW begin
+	* INSERT INTO userlog(b_money,aft_money,uid) values(old.account,new.account,old.id);
+	* END;
