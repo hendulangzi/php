@@ -69,3 +69,6 @@ jetbrains-agent.rar
  	* CREATE TRIGGER `rel` AFTER UPDATE ON `user` FOR EACH ROW begin
 	* INSERT INTO userlog(b_money,aft_money,uid) values(old.account,new.account,old.id);
 	* END;
+
+ # php 加密工具
+  * http://dezend.qiling.org/encrypt/  测试可用
