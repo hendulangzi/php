@@ -75,3 +75,6 @@ jetbrains-agent.rar
   
  # php curl 二进制图片上传
   * https://ask.csdn.net/questions/925082
+ # Thinkphp5之多语言切换
+   * https://blog.csdn.net/qq_24038207/article/details/72627940
+
