@@ -78,3 +78,6 @@ jetbrains-agent.rar
  # Thinkphp5之多语言切换
    * https://blog.csdn.net/qq_24038207/article/details/72627940
 
+ # intellij IDEA激活码
+ activation code提取地址（密码：lookdiv）：
+ http://lookdiv.com/
